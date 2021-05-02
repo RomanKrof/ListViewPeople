@@ -32,7 +32,7 @@ namespace ListViewPeople
 
         private void People_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            People pe = (People)((sender as ListView).SelectedItem);
+            People pe = (People)((sender as ListBox).SelectedItem);
             // Pro formulář!!
             DataContext = pe;
         }
@@ -44,7 +44,7 @@ namespace ListViewPeople
 
         private void People_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            People pe = (People)((sender as ListView).SelectedItem);
+            People pe = (People)((sender as ListBox).SelectedItem);
             PeopleEdit ee = new PeopleEdit(pe);
             ee.ShowDialog();
         }

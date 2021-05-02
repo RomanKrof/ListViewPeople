@@ -73,6 +73,5 @@ namespace ListViewPeople
                 Birth = new DateTime(2002, 12, 17),
             });
         }
-
     }
 }
